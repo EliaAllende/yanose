@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PuroImpetu</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="contenedor">
+		<nav class="menu">
+			<div>
+				<img src="../img/loguito.png" class="loguito" alt="logoPuroImpetu"/>
+			</div>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="tienda.html">Tienda</a>
+					<ul class="submenu">
+						<li><a href="tienda/remeras.html">Remeras</a></li>
+						<li><a href="tienda/pantalones.html">Pantalones</a></li>
+						<li><a href="tienda/camisas.html">Camisas</a></li>
+						<li><a href="tienda/camisolas.html">Camisolas</a></li>
+					</ul>
+				</li>
+				<li><a href="showrooms.html">Showrooms</a></li>
+				<li><a href="nosotros.html">Nosotros</a></li>
+				<li><a href="contacto.html">Contacto</a></li>							
+			</ul>
+		</nav>
+		<header>
+			<h1 class="titulo__pagina">Contacto</h1>
+		</header> 
+		<main>
+			<form class="contacto">
+				<div>
+					<img src="https://images11.eitb.eus/multimedia/images/2012/08/31/705002/705002_botella_mensaje_mar_gdefoncom_foto610x342.jpg"/> 
+				</div>
+				<fieldset class="fieldset">
+					<legend class="violetaDejanosTuComentario">Dejanos tu Cometario</legend>
+						<label for="nombre">Nombre: 
+						<input type="text" name="nombre"></label>
+						<label for="apellido">Apellido:
+						<input type="text" name="apellido"></label>
+						<label for="edad">Edad:
+						<select name="edad">
+							<option value="menos de 16">Menos de 16</option>
+							<option value="de16a20">de 16 a 20</option>
+							<option value="de21a30">de 21 a 30</option>
+							<option value="de31a40">de 31 a 40</option>
+							<option value="de41a50">de 41 a 50</option>
+							<option value="de51a60">de 51 a 60</option>
+							<option value="de61a70">de 61 a 70</option>
+							<option value="masde70">Más de 70</option>
+						</select></label>
+						<label for="email">E-mail: 
+						<input type="email" name="email"></label>
+						<label for="comentario">Comentario:
+						<textarea name="comentarios" cols="60" rows="5" placeholder="Ingrese su mensaje..."></textarea></label>
+						<label id="newsletter" for="newsletter">Quiero suscribirme al newsletter
+						<input type="checkbox" name="newsletter"></label>
+				</fieldset>
+					<inpt type="reset" name="reset" value="Limpiar">
+					<inpt type="submit" name="submit" value="Enviar">
+			</form>
+		</main>	
+		<footer class="pieDePag">
+			<img src="../img/loguito.png" class="logoFooter" alt="logoPuroImpetu"/>
+			<nav class="pieDePag__enlaceRedesSociales">
+				<a href="https://www.facebook.com/puroimpetu/?ref=page_internal">Facebook</a>
+				<a href="https://www.instagram.com/puro_impetu/?hl=es-la">Instagram</a>
+			</nav>
+			<h3 class="pieDePag__parrafo">PuroImpetu. Todos los derechos reservados</h3>
+			<h3 class="pieDePag__parrafo">Desarrollado por ELiA</h3>
+		</footer>
+	</div>
+</body>
+</html>

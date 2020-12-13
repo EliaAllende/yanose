@@ -1,0 +1,213 @@
+body {
+  margin: 0px; }
+
+.titulo__pagina {
+  display: flex;
+  font-style: italic;
+  font-size: 40px;
+  justify-content: space-around;
+  line-height: 50px;
+  padding-top: 0px;
+  border: 0px solid black; }
+
+.loMasVisto__subtitulo {
+  font-style: italic;
+  text-align: center;
+  font-size: 30px; }
+
+.video {
+  padding-left: 60px;
+  text-align: center; }
+
+.loMasVisto__foto {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 0px 0px 50px 40%;
+  max-width: 50%;
+  max-height: 10%; }
+
+#vestidoLargoBordado {
+  width: 50%; }
+
+.loguito {
+  width: 80%; }
+
+.logoFooter {
+  width: 10%; }
+
+.camisasVideo {
+  margin-left: 30%; }
+
+.violetaDejanosTuComentario, .titulo__pagina, .loMasVisto__subtitulo, .menu a, .submenu, .submenu li a, .showrooms__titulo, .showrooms__descripcion {
+  color: #4A235A;
+  font-weight: bold;
+  font-family: segoe script, ink free normal, Kristen ITC Normal, Pristina Normal; }
+
+label {
+  display: flex;
+  flex-direction: column; }
+
+#newsletter {
+  display: flex;
+  flex-direction: row; }
+
+.colorParrafo {
+  color: white;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-family: segoe script;
+  padding: 40px;
+  background-image: linear-gradient(to left, #764080, #91589B, #B57AC0, #E0B5E8, #ECD4EF);
+  transition: all 2s;
+  margin-left: 20%; }
+
+.grad:hover {
+  color: grey;
+  height: 200%; }
+
+.menu {
+  list-style-type: none;
+  text-align: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: nav; }
+  .menu li {
+    display: inline-block;
+    position: relative; }
+  .menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: right; }
+
+.submenu {
+  display: none;
+  position: absolute;
+  text-align: left;
+  margin: auto;
+  background-color: white; }
+
+.submenu li a {
+  display: block;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  justify-content: space-around; }
+
+.menu li:hover .submenu {
+  display: block; }
+
+ol li {
+  list-style-type: Circle; }
+
+.pieDePag__parrafo {
+  font-size: 10px;
+  font-family: square721 BT, Swis721 BT;
+  text-decoration: none;
+  font-family: Raleway; }
+
+.pieDePag {
+  text-align: center; }
+
+.fieldset {
+  width: 100%;
+  box-sizing: border-box; }
+
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20%;
+  margin-left: 20%;
+  width: 40%;
+  height: 90%;
+  box-sizing: border-box; }
+
+.fotoNuestra {
+  justify-content: space-between;
+  max-width: 100%;
+  text-align: center;
+  padding-right: 60px; }
+
+.uno {
+  transform: rotateZ(15deg); }
+
+.dos {
+  transform: skew(8deg);
+  margin-top: 3%; }
+
+/* Showrooms con grid*/
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "nav nav" "header header" "main section" "footer footer"; }
+
+section {
+  grid-area: section; }
+
+.showrooms__div {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.showrooms__titulo {
+  font-style: italic;
+  text-align: center;
+  font-size: 30px; }
+
+header {
+  grid-area: header; }
+
+.showrooms__zonaCentro {
+  width: 60%; }
+
+.showrooms__zonaNorte {
+  height: 33%;
+  width: 70%; }
+
+.showrooms {
+  display: flex; }
+
+.tiendaEnShowrooms {
+  width: 300px;
+  height: 800px; }
+
+.showrooms__descripcion {
+  font-size: 15px;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box; }
+
+.contenedor {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+@media screen and (min-width: 480px) {
+  .contacto {
+    width: 60%; }
+  .colorParrafo {
+    width: 60%; }
+  .pfoShowrooms {
+    background-color: red; } }
+
+@media screen and (max-width: 768px) {
+  .contacto {
+    width: 50%; }
+  .colorParrafo {
+    width: 80%; }
+  .pfoShowrooms {
+    background-color: pink; } }
+
+@media screen and (max-width: 1024px) {
+  .contacto {
+    width: 40%; }
+  .colorParrafo {
+    width: 100%; } }
